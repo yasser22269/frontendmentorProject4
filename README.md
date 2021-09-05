@@ -6,5 +6,5 @@ ui design: https://www.frontendmentor.io/challenges/profile-card-component-cfArp
 <br><br>
 
 Project site: https://yasser22269.github.io/frontendmentorProject4/
-<br>
+<br><br>
 <img src="../master/design/desktop-preview.jpg" alt="">   
