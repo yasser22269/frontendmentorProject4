@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+}
+
+body {
+    --DarkCyan: hsl(185, 75%, 39%);
+    --Very-DarkBlue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    /* background-color: hsl(225, 100%, 94%); */
+    --Dark-gray: hsl(0, 0%, 59%);
+    font-family: 'Kumbh Sans', sans-serif;
+    --FontSize: 18px;
+}
+.center-text {
+    text-align: center;
+  }
+main{
+    background: #19A1AD;
+    /* pattern-background-desktop.svg */
+    /* padding: 32px 0; */
+    overflow: hidden;
+    height: 881px;
+
+    
+}
+main .img-background{
+    grid-template-columns: repeat(auto-fill, minmax(calc(100%/2),1fr));
+    position: relative;
+
+}
+main .img-background img{
+    position: absolute;
+}
+main .img-background img:first-child{
+    background-position: top left;
+    background-size: cover;
+    width: 54%;
+    top: -143px;
+    left: -133px;
+}
+main .img-background img:last-child{
+    background-position: bottom right;
+    background-size: cover;
+    right: -15%;
+    width: 66%;
+    top: 505px;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 22px;
+    margin: 14% auto;
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.card img.img-card{
+    margin-bottom: 25px;
+    width: 100%;
+}
+.card .info{
+    position: relative;
+    position: relative;
+}
+.card .info img{
+    margin-bottom: 30px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: -136px;
+    left: 34%;
+}
+.card .info h1{
+    margin-bottom: 10px;
+    margin-top: 51px;
+    font-size: var(--FontSize);
+}
+.card .info h1 span{
+    color: var(--Dark-gray);
+    margin-left: 8px;
+    font-weight: 100;
+}
+
+.card .info p{
+    font-size:var(--FontSize);
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--Dark-gray);
+    
+}
+.card hr
+{
+    border: 0;
+    height: 0.1px;
+    width: 100%;
+    background: hsl(0deg 0% 85%);
+}
+.card .info-followers{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(100%/3),1fr));
+    margin: 24px 0;
+}
+.card .info-followers h1{
+    font-size: var(--FontSize);
+    margin-bottom: 5px;
+}
+.card .info-followers p{
+    text-align: center;
+    font-size: 12px;
+    color: var(--Dark-gray);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 502px) {
+    .card {
+        margin: 72px 20px;
+    }
+   
+}
+
+@media screen and (max-width: 502px) {
+    .card  {
+        margin: 72px 20px;
+    }
+    main .img-background img {
+        width: 82% !important;
+    }
+}
